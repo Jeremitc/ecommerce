@@ -1,3 +1,5 @@
 export default function ContentDashboard() {
-  return <div>ContentDashboard</div>;
+  return (
+  <div>ContentDashboard</div>
+  );
 }
