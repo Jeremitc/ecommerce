@@ -1,0 +1,71 @@
+PROBANDO APLICACION DEJADO YA POR MI , TERMINADO NAVBAR Y CORREGIDO PROBLEMAS DE ESLINT , RESULTADO SIN ERRORES EN EL DESPLIEGUE DE LA APLICACION
+PS C:\Users\Usuario\Documents\GitHub\ecommerce>npm run build
+
+> ecommerce@0.1.0 build
+> next build
+
+   ▲ Next.js 15.3.0
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 6.0s
+ ✓ Linting and checking validity of types    
+ ✓ Collecting page data    
+ ✓ Generating static pages (7/7)
+ ✓ Finalizing page optimization
+
+Route (app)                                 Size  First Load JS
+┌ ○ /                                      532 B         152 kB
+├ ○ /_not-found                            977 B         102 kB
+├ ○ /pages/dashboard                       531 B         152 kB
+└ ○ /pages/form                            522 B         152 kB
++ First Load JS shared by all             101 kB
+  ├ chunks/4bd1b696-299743f5624cdabe.js  53.2 kB
+  ├ chunks/684-f6898308e52d76f1.js       45.9 kB
+  └ other shared chunks (total)             2 kB
+
+
+○  (Static)  prerendered as static content
+
+PS C:\Users\Usuario\Documents\GitHub\ecommerce> npm run start
+
+> ecommerce@0.1.0 start
+> next start
+
+   ▲ Next.js 15.3.0
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.56.1:3000
+
+ ✓ Starting...
+ ✓ Ready in 467ms
+
+
+
+SIN ERRORES EN EL DESPLIEGUE DE LA APLICACION
+
+
+
+AÑADI CLASES DE TAILWIND , MODIFIQUE LAS PAGINAS EN PAGE PARA USAR LOS THEMAS EN ELLAS DECLARADAS EN CONSTANTES , NO TOCAR , MAS AÑADIDO  EL FLUJO DE RUTAS EN LA APLICACION
+NO TOCAR NAVBAR SIN MI AUTORACION , SI OCURRE UN PROBLEMA INFORMARME AL INTERNO QUE LE RESPONDO 
+
+
+INSTALLACION DE LIBRARYS
+
+INSTALACION DE REACT ICONS PARA DARLE ICONOS EN LAS PAGINAS BONITOS HE INTERACTIVOS COMO EL DE SOL Y LUNA DE NAV BAR , SE LES LLAMA EN EL IMPORT DE LA PAGINA EN DONDE SE QUIERE USAR
+EL ICONO CON SU NOMBRE DEL ICONO
+
+Comand:
+    npm install react-icons
+
+INSTALACION DE FRAMER MOTION PARA USAR TRANSICIONES EN LAS PAGINAS Y ESTILOS ACOMPAÑADOS CON TAILWIND QUE ESTAMOS USANDO , DANDOLE MODERNIDAD
+
+Comand:
+    npm install framer-motion
+
+AÑADIDO TAMBIEN LA CARPETA CONTEXT DONDE LOS THEMAS SE GUARDAN Y SE USAN EN LAS PAGINAS USANDO EL SSR 
+
+AÑADIDO DE LA CARPETA ASSETS DONDE SE GUARDAN LAS IMAGENES PARA USARLAS EN LAS PAGINAS USANDO EL SSR 
+
+AÑADIDO DE LA CARPETA PUBLIC DONDE SE GUARDAN LOS ARCHIVOS QUE SE DEBEN DE SER SERVIDOS DIRECTAMENTE , COMO LAS IMAGENES Y LOS ARCHIVOS ESTABLECIDOS EN LA CONFIGURACION
+
+TODO AÑADIDO EN EL README
+

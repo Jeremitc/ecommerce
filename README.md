@@ -34,3 +34,34 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Added Libraries
+- [React Icons](https://react-icons.github.io/react-icons/)
+  ```bash
+  npm install react-icons
+  ```
+- [Framer Motion](https://www.framer.com/motion/)
+  ```bash
+  npm install framer-motion
+  ```
+
+## Open Project with
+  ```bash
+  npm install 
+  ```
+  install dependencies
+  ```bash
+  npm run dev 
+  ```
+  start the development server
+  ```bash
+  npm run build
+  ```
+  build the project
+  ```bash
+  npm run start
+  ```
+  start the production server
+
+
+
