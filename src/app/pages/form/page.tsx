@@ -3,7 +3,8 @@
 import ContentForm from "@/app/components/ContentDashboard";
 import Footer from "@/app/components/Footer";
 import Navbar from "@/app/components/Navbar";
-import "./globals.css";
+import "@/app/globals.css";
+
 
 export default function FormPage() {
 

@@ -3,7 +3,8 @@
 import ContentDashboard from "@/app/components/ContentDashboard";
 import Footer from "@/app/components/Footer";
 import Navbar from "@/app/components/Navbar";
-import "./globals.css";
+import Carrusel from "@/app/components/Carrusel";
+import "@/app/globals.css";
 
 export default function DashboardPage(){
 
@@ -13,6 +14,7 @@ export default function DashboardPage(){
             <Navbar/>
             </section>
             <h1>Dashboard</h1>
+            <Carrusel/>
             <section>
             <ContentDashboard/>
             </section>
