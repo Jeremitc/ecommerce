@@ -232,17 +232,16 @@ body {
 
 .item-producto button {
     background-color: #fff;
-    color: #d72121;
+    color: #9d2525;
     border-radius: 20px;
-    border: 1px solid #d72121;
+    border: 1px solid #9d2525;
     margin-top: 10px;
-    margin-left: 15px;
-    padding: 8px 18px;
+    padding: 8px 50px;
     cursor: pointer;
 }
 
 .item-producto button:hover{
-    background-color: #d72121;
+    background-color: #a72828;
     color: white;
     transition: .5s ease;
 }
@@ -261,5 +260,6 @@ body {
 
 .precio-producto{
     color: #d72121;
-    margin-top: 9px;
+    margin-top: 13px;
+    margin-bottom: 5px;
 }
