@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página Principal - Electrodomésticos</title>
   <link rel="stylesheet" href="contenido.css">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-  <!-- Carrusel con 2 bloques -->
+  <!-- Carrusel -->
   <div class="carrusel-container">
     <div class="carrusel-inner" id="carrusel">
       <div class="carrusel-bloque active">
-        <div>Imagen + Precio 1</div>
-        <div>¡OFERTA 1!</div>
+        <div>
+          <img src="img/Carrusel-Imagen2.webp" alt="Carrusel">
+        </div>
       </div>
       <div class="carrusel-bloque">
-        <div>Imagen + Precio 2</div>
-        <div>¡OFERTA 2!</div>
+        <img src="img/Carrusel-Imagen1.webp" alt="Carrusel">
       </div>
     </div>
     <button class="carrusel-boton prev" onclick="moverCarrusel(-1)">&#10094;</button>
@@ -26,13 +31,17 @@
 
   <!-- Contenedores de Ofertas -->
   <div class="contenedor-ofertas">
-    <div class="oferta-box">Ofertas Hogar (Refris, Ollas, etc)</div>
-    <div class="oferta-box">Ofertas Tecnología (TV, Celulares, etc)</div>
+    <div class="oferta-box">
+      <img src="img/ContenedorOfertas-Imagen1.webp" alt="Ofertas">
+    </div>
+    <div class="oferta-box">
+      <img src="img/ContenedorOfertas-Imagen2.jpg" alt="Ofertas">
+    </div>
   </div>
 
   <!-- Anuncio Delgado -->
   <div class="anuncio-delgado">
-    ¡Ofertas por tiempo limitado! Corre que se van 🔥
+    <h1>¡Ofertas por tiempo limitado! <i class="fa-solid fa-clock"></i></h1>
   </div>
 
   <!-- Grid de productos en oferta -->
@@ -47,8 +56,12 @@
 
   <!-- 2 Anuncios random -->
   <div class="anuncios-random">
-    <div class="anuncio">Anuncio 1</div>
-    <div class="anuncio">Anuncio 2</div>
+    <div class="anuncio">
+      <img src="img/Anuncio-bcp.jpg" alt="Anuncio BCP" id="Anuncio-BCP">
+    </div>
+    <div class="anuncio">
+      <img src="img/Anuncio-Rappi.jpg" alt="Anuncio Rappi" id="Anuncio-Rappi">
+    </div>
   </div>
 
   <!-- Carruseles de productos con estructura -->
@@ -63,60 +76,60 @@
     </div>
 
     <div class="item-producto">
-        <img src="" alt="Producto">
-        <p>Nombre Producto</p>
-        <p>Descripción breve del producto</p>
-        <p>Precio</p>
-        <button>Agregar al carrito</button>
+      <img src="" alt="Producto">
+      <p>Nombre Producto</p>
+      <p>Descripción breve del producto</p>
+      <p>Precio</p>
+      <button>Agregar al carrito</button>
     </div>
 
     <div class="item-producto">
-        <img src="" alt="Producto">
-        <p>Nombre Producto</p>
-        <p>Descripción breve del producto</p>
-        <p>Precio</p>
-        <button>Agregar al carrito</button>
+      <img src="" alt="Producto">
+      <p>Nombre Producto</p>
+      <p>Descripción breve del producto</p>
+      <p>Precio</p>
+      <button>Agregar al carrito</button>
     </div>
 
     <div class="item-producto">
-        <img src="" alt="Producto">
-        <p>Nombre Producto</p>
-        <p>Descripción breve del producto</p>
-        <p>Precio</p>
-        <button>Agregar al carrito</button>
-      </div>
+      <img src="" alt="Producto">
+      <p>Nombre Producto</p>
+      <p>Descripción breve del producto</p>
+      <p>Precio</p>
+      <button>Agregar al carrito</button>
+    </div>
 
-      <div class="item-producto">
-        <img src="" alt="Producto">
-        <p>Nombre Producto</p>
-        <p>Descripción breve del producto</p>
-        <p>Precio</p>
-        <button>Agregar al carrito</button>
-      </div>
+    <div class="item-producto">
+      <img src="" alt="Producto">
+      <p>Nombre Producto</p>
+      <p>Descripción breve del producto</p>
+      <p>Precio</p>
+      <button>Agregar al carrito</button>
+    </div>
 
-      <div class="item-producto">
-        <img src="" alt="Producto">
-        <p>Nombre Producto</p>
-        <p>Descripción breve del producto</p>
-        <p>Precio</p>
-        <button>Agregar al carrito</button>
-      </div>
+    <div class="item-producto">
+      <img src="" alt="Producto">
+      <p>Nombre Producto</p>
+      <p>Descripción breve del producto</p>
+      <p>Precio</p>
+      <button>Agregar al carrito</button>
+    </div>
 
-      <div class="item-producto">
-        <img src="" alt="Producto">
-        <p>Nombre Producto</p>
-        <p>Descripción breve del producto</p>
-        <p>Precio</p>
-        <button>Agregar al carrito</button>
-      </div>
+    <div class="item-producto">
+      <img src="" alt="Producto">
+      <p>Nombre Producto</p>
+      <p>Descripción breve del producto</p>
+      <p>Precio</p>
+      <button>Agregar al carrito</button>
+    </div>
 
-      <div class="item-producto">
-        <img src="" alt="Producto">
-        <p>Nombre Producto</p>
-        <p>Descripción breve del producto</p>
-        <p>Precio</p>
-        <button>Agregar al carrito</button>
-      </div>
+    <div class="item-producto">
+      <img src="" alt="Producto">
+      <p>Nombre Producto</p>
+      <p>Descripción breve del producto</p>
+      <p>Precio</p>
+      <button>Agregar al carrito</button>
+    </div>
   </div>
 
   <h1>Electrodomésticos pequeños</h1>
@@ -130,129 +143,132 @@
     </div>
 
     <div class="item-producto">
-        <img src="" alt="Producto">
-        <p>Nombre Producto</p>
-        <p>Descripción breve del producto</p>
-        <p>Precio</p>
-        <button>Agregar al carrito</button>
-      </div>
+      <img src="" alt="Producto">
+      <p>Nombre Producto</p>
+      <p>Descripción breve del producto</p>
+      <p>Precio</p>
+      <button>Agregar al carrito</button>
+    </div>
 
-      <div class="item-producto">
-        <img src="" alt="Producto">
-        <p>Nombre Producto</p>
-        <p>Descripción breve del producto</p>
-        <p>Precio</p>
-        <button>Agregar al carrito</button>
-      </div>
+    <div class="item-producto">
+      <img src="" alt="Producto">
+      <p>Nombre Producto</p>
+      <p>Descripción breve del producto</p>
+      <p>Precio</p>
+      <button>Agregar al carrito</button>
+    </div>
 
-      <div class="item-producto">
-        <img src="" alt="Producto">
-        <p>Nombre Producto</p>
-        <p>Descripción breve del producto</p>
-        <p>Precio</p>
-        <button>Agregar al carrito</button>
-      </div>
+    <div class="item-producto">
+      <img src="" alt="Producto">
+      <p>Nombre Producto</p>
+      <p>Descripción breve del producto</p>
+      <p>Precio</p>
+      <button>Agregar al carrito</button>
+    </div>
 
-      <div class="item-producto">
-        <img src="" alt="Producto">
-        <p>Nombre Producto</p>
-        <p>Descripción breve del producto</p>
-        <p>Precio</p>
-        <button>Agregar al carrito</button>
-      </div>
+    <div class="item-producto">
+      <img src="" alt="Producto">
+      <p>Nombre Producto</p>
+      <p>Descripción breve del producto</p>
+      <p>Precio</p>
+      <button>Agregar al carrito</button>
+    </div>
 
-      <div class="item-producto">
-        <img src="" alt="Producto">
-        <p>Nombre Producto</p>
-        <p>Descripción breve del producto</p>
-        <p>Precio</p>
-        <button>Agregar al carrito</button>
-      </div>
+    <div class="item-producto">
+      <img src="" alt="Producto">
+      <p>Nombre Producto</p>
+      <p>Descripción breve del producto</p>
+      <p>Precio</p>
+      <button>Agregar al carrito</button>
+    </div>
 
-      <div class="item-producto">
-        <img src="" alt="Producto">
-        <p>Nombre Producto</p>
-        <p>Descripción breve del producto</p>
-        <p>Precio</p>
-        <button>Agregar al carrito</button>
-      </div>
+    <div class="item-producto">
+      <img src="" alt="Producto">
+      <p>Nombre Producto</p>
+      <p>Descripción breve del producto</p>
+      <p>Precio</p>
+      <button>Agregar al carrito</button>
+    </div>
 
-      <div class="item-producto">
-        <img src="" alt="Producto">
-        <p>Nombre Producto</p>
-        <p>Descripción breve del producto</p>
-        <p>Precio</p>
-        <button>Agregar al carrito</button>
-      </div>
+    <div class="item-producto">
+      <img src="" alt="Producto">
+      <p>Nombre Producto</p>
+      <p>Descripción breve del producto</p>
+      <p>Precio</p>
+      <button>Agregar al carrito</button>
+    </div>
   </div>
 
   <h1>Electrónica</h1>
   <div class="carrusel-productos">
     <div class="item-producto">
-        <img src="" alt="Producto">
-        <p>Nombre Producto</p>
-        <p>Descripción breve del producto</p>
-        <p>Precio</p>
-        <button>Agregar al carrito</button>
+      <img src="" alt="Producto">
+      <p>Nombre Producto</p>
+      <p>Descripción breve del producto</p>
+      <p>Precio</p>
+      <button>Agregar al carrito</button>
     </div>
 
     <div class="item-producto">
-        <img src="" alt="Producto">
-        <p>Nombre Producto</p>
-        <p>Descripción breve del producto</p>
-        <p>Precio</p>
-        <button>Agregar al carrito</button>
+      <img src="" alt="Producto">
+      <p>Nombre Producto</p>
+      <p>Descripción breve del producto</p>
+      <p>Precio</p>
+      <button>Agregar al carrito</button>
     </div>
 
     <div class="item-producto">
-        <img src="" alt="Producto">
-        <p>Nombre Producto</p>
-        <p>Descripción breve del producto</p>
-        <p>Precio</p>
-        <button>Agregar al carrito</button>
+      <img src="" alt="Producto">
+      <p>Nombre Producto</p>
+      <p>Descripción breve del producto</p>
+      <p>Precio</p>
+      <button>Agregar al carrito</button>
     </div>
 
     <div class="item-producto">
-        <img src="" alt="Producto">
-        <p>Nombre Producto</p>
-        <p>Descripción breve del producto</p>
-        <p>Precio</p>
-        <button>Agregar al carrito</button>
-      </div>
+      <img src="" alt="Producto">
+      <p>Nombre Producto</p>
+      <p>Descripción breve del producto</p>
+      <p>Precio</p>
+      <button>Agregar al carrito</button>
+    </div>
 
-      <div class="item-producto">
-        <img src="" alt="Producto">
-        <p>Nombre Producto</p>
-        <p>Descripción breve del producto</p>
-        <p>Precio</p>
-        <button>Agregar al carrito</button>
-      </div>
+    <div class="item-producto">
+      <img src="" alt="Producto">
+      <p>Nombre Producto</p>
+      <p>Descripción breve del producto</p>
+      <p>Precio</p>
+      <button>Agregar al carrito</button>
+    </div>
 
-      <div class="item-producto">
-        <img src="" alt="Producto">
-        <p>Nombre Producto</p>
-        <p>Descripción breve del producto</p>
-        <p>Precio</p>
-        <button>Agregar al carrito</button>
-      </div>
+    <div class="item-producto">
+      <img src="" alt="Producto">
+      <p>Nombre Producto</p>
+      <p>Descripción breve del producto</p>
+      <p>Precio</p>
+      <button>Agregar al carrito</button>
+    </div>
 
-      <div class="item-producto">
-        <img src="" alt="Producto">
-        <p>Nombre Producto</p>
-        <p>Descripción breve del producto</p>
-        <p>Precio</p>
-        <button>Agregar al carrito</button>
-      </div>
+    <div class="item-producto">
+      <img src="" alt="Producto">
+      <p>Nombre Producto</p>
+      <p>Descripción breve del producto</p>
+      <p>Precio</p>
+      <button>Agregar al carrito</button>
+    </div>
 
-      <div class="item-producto">
-        <img src="" alt="Producto">
-        <p>Nombre Producto</p>
-        <p>Descripción breve del producto</p>
-        <p>Precio</p>
-        <button>Agregar al carrito</button>
-      </div>
+    <div class="item-producto">
+      <img src="" alt="Producto">
+      <p>Nombre Producto</p>
+      <p>Descripción breve del producto</p>
+      <p>Precio</p>
+      <button>Agregar al carrito</button>
+    </div>
   </div>
 
   <script src="carrusel.js"></script>
+  <script src="https://kit.fontawesome.com/tu_codigo_kit.js" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
