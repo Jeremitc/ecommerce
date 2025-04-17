@@ -1,7 +1,7 @@
 // src/app/pages/form/page.tsx (o donde esté)
 'use client';
 import React from 'react';
-import ContentForm from "@/app/components/ContentDashboard"; // Revisa si es correcto
+import ContentForm from "@/app/components/ContentForm"; // Revisa si es correcto
 import Footer from "@/app/components/Footer";
 import Navbar from "@/app/components/Navbar";
 import { useTheme } from '@/app/context/ThemeContext'; // Corregido para usar @/
