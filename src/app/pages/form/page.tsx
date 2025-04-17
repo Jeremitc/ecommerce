@@ -22,7 +22,7 @@ export default function FormPage() {
                 <Navbar />
             </section>
             <section className="pt-20">
-                <h1 className="text-center text-3xl font-bold mb-8">Formulario</h1>
+                <h1 className="text-center text-3xl font-bold mb-8">Contactenos</h1>
                 <ContentForm />
             </section>
             <section>
