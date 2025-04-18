@@ -3,8 +3,6 @@
 import React from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { useTheme } from '@/app/context/ThemeContext';
-import { CgKey } from 'react-icons/cg';
-import { div } from 'framer-motion/client';
 
 type FormValues = {
   name: string;
