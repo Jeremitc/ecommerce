@@ -12,7 +12,7 @@ export default function ContentDashboard() {
   
   // Datos de ejemplo para los productos (podrías obtenerlos de una API)
   const lineaBlanca = [
-    { img: '/assets/images/contentDashboard/Refrigeradora-NoFrost.jpg', title: 'Refrigeradora No Frost 300L Inoxidable', desc: 'Acabado en acero inoxidable', price: 'S/ 1.499' },
+    { img: '/img/contentDashboard/Refrigeradora-NoFrost.jpg', title: 'Refrigeradora No Frost 300L Inoxidable', desc: 'Acabado en acero inoxidable', price: 'S/ 1.499' },
     { img: '/img/Cocina a Gas.webp', title: 'Cocina a Gas 4 Hornillas', desc: 'Con horno eléctrico', price: 'S/ 1.049' },
     { img: '/img/Lavadora Automatica 12kg.jpeg', title: 'Lavadora Automática 12kg', desc: 'Con tecnología inverter', price: 'S/ 1.999' },
     { img: '/img/Secadora de Ropa Electrica.jpeg', title: 'Secadora de Ropa Eléctrica', desc: '8kg con Sensor de Humedad', price: 'S/ 899' },
