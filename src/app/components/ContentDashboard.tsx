@@ -62,7 +62,7 @@ export default function ContentDashboard() {
   );
 
   // Componente reutilizable para carruseles de productos
-  const ProductCarousel = ({ title, products }: { title: string, products: any[] }) => (
+  const ProductCarousel = ({ title, products }: { title: string, products: any [] }) => (
       <div className="mb-10">
           <h2 className="Productos px-5 text-2xl font-bold mb-3">{title}</h2>
           <div className="carrusel-productos w-full overflow-x-auto whitespace-nowrap px-5 pb-5 -mb-5"> {/* Padding bottom y margin bottom negativo para ocultar scrollbar visualmente si es necesario */}
