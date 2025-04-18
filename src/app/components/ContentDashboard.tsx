@@ -3,6 +3,13 @@ import React from 'react';
 import Image from 'next/image';
 
 export default function ContentDashboard() {
+  interface Product {
+    img: string;
+    title: string;
+    desc: string;
+    price: string;
+  }
+  
   // Datos de ejemplo para los productos (podrías obtenerlos de una API)
   const lineaBlanca = [
     { img: '/assets/images/contentDashboard/Refrigeradora-NoFrost.jpg', title: 'Refrigeradora No Frost 300L Inoxidable', desc: 'Acabado en acero inoxidable', price: 'S/ 1.499' },
@@ -62,7 +69,7 @@ export default function ContentDashboard() {
   );
 
   // Componente reutilizable para carruseles de productos
-  const ProductCarousel = ({ title, products }: { title: string, products: any [] }) => (
+  const ProductCarousel = ({ title, products }: { title: string, products: Product [] }) => (
       <div className="mb-10">
           <h2 className="Productos px-5 text-2xl font-bold mb-3">{title}</h2>
           <div className="carrusel-productos w-full overflow-x-auto whitespace-nowrap px-5 pb-5 -mb-5"> {/* Padding bottom y margin bottom negativo para ocultar scrollbar visualmente si es necesario */}
