@@ -12,11 +12,11 @@ export default function ContentDashboard() {
   
   // Datos de ejemplo para los productos (podrías obtenerlos de una API)
   const lineaBlanca = [
-    { img: '/img/contentDashboard/Refrigeradora-NoFrost.jpg', title: 'Refrigeradora No Frost 300L Inoxidable', desc: 'Acabado en acero inoxidable', price: 'S/ 1.499' },
+    { img: '/img/Refrigeradora-NoFrost.jpg', title: 'Refrigeradora No Frost 300L Inoxidable', desc: 'Acabado en acero inoxidable', price: 'S/ 1.499' },
     { img: '/img/Cocina a Gas.webp', title: 'Cocina a Gas 4 Hornillas', desc: 'Con horno eléctrico', price: 'S/ 1.049' },
     { img: '/img/Lavadora Automatica 12kg.jpeg', title: 'Lavadora Automática 12kg', desc: 'Con tecnología inverter', price: 'S/ 1.999' },
     { img: '/img/Secadora de Ropa Electrica.jpeg', title: 'Secadora de Ropa Eléctrica', desc: '8kg con Sensor de Humedad', price: 'S/ 899' },
-    { img: '/img/Congeladora Horizontal 200L.jpeg', title: 'Congeladora Horizontal 200L con Doble Tapa', desc: 'Interior de aluminio texturizado', price: 'S/ 1.999' },
+    { img: '/img/Congeladora Horizontal 200L.jpeg', title: 'Congeladora Horizontal 200L', desc: 'Interior de aluminio texturizado', price: 'S/ 1.999' },
     { img: '/img/Microondas 30L.jpg', title: 'Horno Microondas 30L con Función Grill', desc: 'Interior de acero inoxidable', price: 'S/ 204' },
     { img: '/img/Lavavajillas Empotrable.jpeg', title: 'Lavavajillas Bosch Empotrable', desc: 'Interior en acero inoxidable', price: 'S/ 2.057' },
     { img: '/img/Campana extractora.jpg', title: 'Campana Extractora 60cm', desc: 'Con filtro de carbón activado', price: 'S/ 350' },
@@ -41,12 +41,12 @@ export default function ContentDashboard() {
 
   const electronica = [
       { img: '/img/Televisor Samsung Smart TV.webp', title: 'Smart TV 55" 4K-UHD con sistema Android', desc: 'Con control por voz', price: 'S/ 1.699' },
-      { img: '/img/Laptop Core i5.jpg', title: 'Laptop Core i5 11va Gen', desc: 'Con 8GB RAM', price: 'S/ 2.399' },
+      { img: '/img/Laptop Core i5.jpg', title: 'Laptop Core i5 11va Gen con 8GB RAM', desc: 'Con Carga Rapida', price: 'S/ 2.399' },
       { img: '/img/Audifonos Inalambricos.webp', title: 'Audífonos Inalámbricos Bluetooth', desc: 'Sonido envolvente', price: 'S/ 129.90' },
       { img: '/img/Tablet 10\'\' 64GB.webp', title: 'Tablet 10" 64GB WiFi + Bluetooth', desc: 'Ideal para entretenimiento', price: 'S/ 489.00' },
       { img: '/img/Camara de Seguridad.webp', title: 'Cámara de Seguridad WiFi 360°', desc: 'Con visión nocturna', price: 'S/ 179.90' },
       { img: '/img/Mouse Inalambrico Recargable.webp', title: 'Mouse Inalámbrico Recargable', desc: 'Diseño ergonómico', price: 'S/ 49.90' },
-      { img: '/img/Parlante Bluetooth Portatil.webp', title: 'Parlante Bluetooth Portátil', desc: 'Resistente al agua', price: 'S/ 99.90' },
+      { img: '/img/Parlante Bluetooth Portatil.webp', title: 'Parlante Bluetooth Portátil con Sonido Envolvente', desc: 'Resistente al agua', price: 'S/ 99.90' },
       { img: '/img/Cargador Rapido USB.webp', title: 'Cargador Rápido USB-C 25W', desc: 'Compatible con samsung', price: 'S/ 59.90' },
       { img: '/img/Monitor LED 24\'\'.jpeg', title: 'Monitor LED 24" Full HD', desc: 'Ideal para oficina y estudio', price: 'S/ 449.90' },
       { img: '/img/Teclado Mecanico RGB Gamer.webp', title: 'Teclado Mecánico RGB Gamer', desc: 'Iluminación personalizable', price: 'S/ 189.90' },
@@ -55,12 +55,12 @@ export default function ContentDashboard() {
 
   // Componente reutilizable para el item de producto en carruseles horizontales
   const ProductItem = ({ img, title, desc, price }: { img: string, title: string, desc: string, price: string }) => (
-    <div className="item-producto inline-block w-[200px] h-[370px] mr-[5px] bg-white p-[15px] border border-gray-300 align-top overflow-hidden hover:shadow-xl transition duration-500 ease-in-out rounded-md">
+    <div className="item-producto inline-block w-[230px] h-[400px] mr-[5px] bg-white p-[15px] border border-gray-300 align-top overflow-hidden hover:shadow-xl transition duration-500 ease-in-out rounded-md">
       <div className="relative w-full h-[180px] mb-3">
         <Image src={img} alt={title} layout="fill" objectFit="cover" className="rounded-t-md" />
       </div>
       <p className="titulo-producto whitespace-normal break-words overflow-visible font-semibold h-[40px] leading-tight">{title}</p>
-      <p className="descripcion-producto text-gray-500 text-sm mt-2 h-[32px]">{desc}</p>
+      <p className="descripcion-producto text-gray-500 text-sm mt-2 h-[22px]">{desc}</p>
       <p className="precio-producto text-red-600 mt-3 mb-1.5 font-bold">{price}</p>
       <button className="w-full bg-white text-red-700 rounded-full border border-red-700 mt-2.5 py-2 px-4 cursor-pointer hover:bg-red-800 hover:text-white transition duration-500 ease-in-out text-sm font-medium">
         AGREGAR
@@ -86,10 +86,10 @@ export default function ContentDashboard() {
 
       {/* Contenedores de Ofertas */}
       <div className="contenedor-ofertas flex flex-col md:flex-row justify-around p-5 mt-5 gap-4">
-        <div className="oferta-box w-full md:w-[49%] h-[180px] bg-white overflow-hidden rounded-lg relative shadow">
+        <div className="oferta-box w-full md:w-[50%] h-[220px] bg-white overflow-hidden rounded-lg relative shadow">
           <Image src="/img/ContenedorOfertas-Imagen1.webp" alt="Ofertas 1" layout="fill" objectFit="cover" className="rounded-lg"/>
         </div>
-        <div className="oferta-box w-full md:w-[49%] h-[180px] bg-white overflow-hidden rounded-lg relative shadow">
+        <div className="oferta-box w-full md:w-[50%] h-[220px] bg-white overflow-hidden rounded-lg relative shadow">
           <Image src="/img/ContenedorOfertas-Imagen2.jpg" alt="Ofertas 2" layout="fill" objectFit="cover" className="rounded-lg"/>
         </div>
       </div>
@@ -103,23 +103,23 @@ export default function ContentDashboard() {
 
       {/* Grid de productos en oferta */}
       <div className="grid-ofertas grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-5 overflow-hidden">
-        <div className="producto h-[230px] bg-white text-center overflow-hidden rounded-lg shadow relative">
+        <div className="producto h-[250px] bg-white text-center overflow-hidden rounded-lg shadow relative">
           <Image src="/img/Producto-Oferta1.PNG" alt="Oferta Producto 1" layout="fill" objectFit="cover" className="rounded-lg"/>
         </div>
-        <div className="producto h-[230px] bg-white text-center overflow-hidden rounded-lg shadow relative">
+        <div className="producto h-[250px] bg-white text-center overflow-hidden rounded-lg shadow relative">
           <Image src="/img/Producto-Oferta2.PNG" alt="Oferta Producto 2" layout="fill" objectFit="cover" className="rounded-lg"/>
         </div>
-        <div className="producto h-[230px] bg-white text-center overflow-hidden rounded-lg shadow relative">
+        <div className="producto h-[250px] bg-white text-center overflow-hidden rounded-lg shadow relative">
           <Image src="/img/Producto-Oferta3.PNG" alt="Oferta Producto 3" layout="fill" objectFit="cover" className="rounded-lg"/>
         </div>
       </div>
 
       {/* 2 Anuncios random */}
       <div className="anuncios-random flex flex-col md:flex-row justify-between p-5 mb-[30px] gap-4">
-        <div className="anuncio w-full md:w-[49%] h-[280px] bg-gray-100 flex items-center justify-center overflow-hidden rounded-lg shadow relative">
+        <div className="anuncio w-full md:w-[50%] h-[225px] bg-gray-100 flex items-center justify-center overflow-hidden rounded-lg shadow relative">
           <Image src="/img/Anuncio-bcp.jpg" alt="Anuncio BCP" layout="fill" objectFit="cover" id="Anuncio-BCP" className="rounded-lg"/>
         </div>
-        <div className="anuncio w-full md:w-[49%] h-[280px] bg-gray-100 flex items-center justify-center overflow-hidden rounded-lg shadow relative">
+        <div className="anuncio w-full md:w-[50%] h-[225px] bg-gray-100 flex items-center justify-center overflow-hidden rounded-lg shadow relative">
           {/* Ajuste para Rappi si es necesario, objectFit="contain" podría ser útil si la imagen tiene espacios */}
           <Image src="/img/Anuncio-Rappi.jpg" alt="Anuncio Rappi" layout="fill" objectFit="cover" id="Anuncio-Rappi" className="rounded-lg"/>
         </div>
