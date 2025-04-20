@@ -52,11 +52,12 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <motion.footer
+    <motion.footer 
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8, ease: 'easeOut' }}
       className={`w-full py-10 px-4 sm:px-6 lg:px-8 ${bgColor} ${textColor}`}
+      id="footer"
     >
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* Section 1: About the company */}
@@ -87,7 +88,7 @@ const Footer: React.FC = () => {
               { label: 'Inicio', href: '#inicio' },
               { label: 'Productos', href: '#productos' },
               { label: 'Ofertas', href: '#ofertas' },
-              { label: 'Contacto', href: '#contacto' },
+              { label: 'Contacto', href: '../pages/form' },
             ].map((item) => (
               <motion.li
                 key={item.label}

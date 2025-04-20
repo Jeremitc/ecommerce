@@ -95,15 +95,15 @@ export default function ContentDashboard() {
       </div>
 
       {/* Anuncio Delgado */}
-      <div className="anuncio-delgado flex h-20 bg-yellow-500 text-center p-2.5 font-bold justify-center items-center mt-[30px] mb-5 rounded-md shadow">
-        <h1 className="text-2xl md:text-3xl m-0 p-0 text-white">
+      <div  className="anuncio-delgado flex h-20 bg-yellow-500 text-center p-2.5 font-bold justify-center items-center mt-[30px] mb-5 rounded-md shadow">
+        <h1  className="text-2xl md:text-3xl m-0 p-0 text-white">
           ¡Ofertas por tiempo limitado! <i className="fa-solid fa-clock ml-2"></i>
         </h1>
       </div>
 
       {/* Grid de productos en oferta */}
-      <div className="grid-ofertas grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-5 overflow-hidden">
-        <div className="producto h-[250px] bg-white text-center overflow-hidden rounded-lg shadow relative">
+      <div id="ofertas"  className=" grid-ofertas grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-5 overflow-hidden">
+        <div   className="producto h-[250px] bg-white text-center overflow-hidden rounded-lg shadow relative">
           <Image src="/img/Producto-Oferta1.PNG" alt="Oferta Producto 1" layout="fill" objectFit="cover" className="rounded-lg"/>
         </div>
         <div className="producto h-[250px] bg-white text-center overflow-hidden rounded-lg shadow relative">
@@ -126,10 +126,10 @@ export default function ContentDashboard() {
       </div>
 
       {/* Carruseles de productos */}
-      <ProductCarousel title="Electrodomésticos de línea blanca" products={lineaBlanca} />
+        <div id="products"><ProductCarousel title="Electrodomésticos de línea blanca" products={lineaBlanca} />
       <ProductCarousel title="Electrodomésticos pequeños" products={pequenosElectrodomesticos} />
       <ProductCarousel title="Electrónica" products={electronica} />
-
+        </div>
     </div>
   );
 }

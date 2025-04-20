@@ -13,11 +13,9 @@ import { useTheme } from '@/app/context/ThemeContext'; // Importa Theme también
 const navItems = [
     { label: 'Home', href: '/' },
     { label: 'Productos', href: '/#products' },
-    { label: 'Nosotros', href: '/#about' },
-    { label: 'Carrusel', href: '/#carrusel' },
-    { label: 'Contacto', href: '/#contact' },
-    { label: 'Formulario', href: '/pages/form' },
-    { label: 'Footer', href: '#footer' },
+    { label: 'Ofertas', href: '/#ofertas' },
+    { label: 'Contactos', href: '/pages/form' },
+    { label: 'Information', href: '#footer' },
 ];
 
 // --- Variables de Colores ---

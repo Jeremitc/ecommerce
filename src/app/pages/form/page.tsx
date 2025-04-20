@@ -27,9 +27,9 @@ export default function FormPage() {
                     <ContentForm />
                 </section>
             </main>
-            <footer>
+            <section>
                 <Footer />
-            </footer>
+            </section>
         </div>
     );
 }
