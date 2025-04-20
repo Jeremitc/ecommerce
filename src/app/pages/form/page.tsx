@@ -17,17 +17,19 @@ export default function FormPage() {
         : 'bg-neutral-50 text-neutral-900'; // light y red-navbar usan este
 
     return (
-        <div className={`min-h-screen font-sans transition-colors duration-300 ${pageClasses}`}>
+        <div className={`flex flex-col min-h-screen font-sans transition-colors duration-300 ${pageClasses}`}>
             <section>
                 <Navbar />
             </section>
-            <section className="pt-20">
-                <h1 className="text-center text-3xl font-bold mb-8">Contactenos</h1>
-                <ContentForm />
-            </section>
-            <section>
+            <main className="flex-grow">
+                <section className="pt-20">
+                    <h1 className="text-center text-3xl font-bold mb-8">Contactenos</h1>
+                    <ContentForm />
+                </section>
+            </main>
+            <footer>
                 <Footer />
-            </section>
+            </footer>
         </div>
     );
 }

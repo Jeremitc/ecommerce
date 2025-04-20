@@ -18,6 +18,12 @@ export default function DashboardPage() {
     ? 'theme-red bg-red-950 text-neutral-100'
     : 'bg-neutral-50 text-neutral-900';
 
+  // Define los slides para el carrusel principal
+  const mainCarouselSlides = [
+    { src: '/img/Carrusel-Imagen2.webp', alt: 'Promoción Especial Refrigeradoras' },
+    { src: '/img/Carrusel-Imagen1.webp', alt: 'Ofertas en Línea Blanca' },
+  ];
+
   return (
     <div className={`flex flex-col min-h-screen font-sans transition-colors duration-300 ${pageClasses}`}>
       {/* Navbar */}
@@ -29,7 +35,7 @@ export default function DashboardPage() {
       <main className="flex-grow">
         <h1 className="pt-20 text-center text-3xl font-bold">Dashboard</h1>
         <section>
-          <Carrusel />
+          <Carrusel slides={mainCarouselSlides} height="h-[300px] md:h-[450px]"/>
         </section>
         <section>
           <ContentDashboard />
