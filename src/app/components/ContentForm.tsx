@@ -54,7 +54,7 @@ export default function ContentForm() {
           ¡Mensaje enviado con éxito!
         </div>
       ) : (
-        <form onSubmit={handleSubmit(onSubmit)} className='space-y-6'>
+        <form onSubmit={handleSubmit(onSubmit)} className='space-y-6 mb-7'>
           <div>
             <label className={`block text-sm font-medium ${labelClasses} mb-2`}>
               Nombre
