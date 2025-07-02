@@ -1,4 +1,3 @@
-// components/ContentForm.tsx
 'use client';
 import React from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
@@ -9,7 +8,7 @@ type FormValues = {
   email: string;
   phone?: string;
   message: string;
-}
+};
 
 export default function ContentForm() {
   const { theme } = useTheme();
@@ -21,7 +20,7 @@ export default function ContentForm() {
   } = useForm<FormValues>();
 
   const onSubmit: SubmitHandler<FormValues> = async (data) => {
-    try{
+    try {
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
@@ -39,11 +38,9 @@ export default function ContentForm() {
 
   const inputClasses = theme === 'dark'
     ? 'bg-black border-neutral-700 text-neutral-100 focus:border-red-500'
-    : theme === 'red-global'
-    ? 'bg-red-900 border-red-700 text-neutral-100 focus:border-red-300'
-    : 'bg-white border-neutral-300 text-neutral-900 focus:border-red-600';
+    : 'bg-white border-neutral-300 text-neutral-900 focus:border-red-500';
 
-  const labelClasses = theme === 'dark' || theme === 'red-global'
+  const labelClasses = theme === 'dark'
     ? 'text-neutral-300'
     : 'text-neutral-600';
 
@@ -54,7 +51,7 @@ export default function ContentForm() {
           ¡Mensaje enviado con éxito!
         </div>
       ) : (
-        <form onSubmit={handleSubmit(onSubmit)} className='space-y-6 mb-7'>
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 mb-7">
           <div>
             <label className={`block text-sm font-medium ${labelClasses} mb-2`}>
               Nombre
@@ -64,7 +61,7 @@ export default function ContentForm() {
               className={`w-full px-4 py-2 border rounded-lg ${inputClasses}`}
             />
             {errors.name && (
-              <p className='text-red-500 text-sm mt-1'>{errors.name.message}</p>
+              <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>
             )}
           </div>
 
@@ -73,18 +70,18 @@ export default function ContentForm() {
               Email
             </label>
             <input
-              type='email'
+              type="email"
               {...register('email', {
                 required: 'Este campo es obligatorio',
                 pattern: {
                   value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                   message: 'Email inválido',
-                }
+                },
               })}
               className={`w-full px-4 py-2 border rounded-lg ${inputClasses}`}
             />
             {errors.email && (
-              <p className='text-red-500 text-sm mt-1'>{errors.email.message}</p>
+              <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
             )}
           </div>
 
@@ -93,7 +90,7 @@ export default function ContentForm() {
               Teléfono
             </label>
             <input
-              type='tel'
+              type="tel"
               {...register('phone')}
               className={`w-full px-4 py-2 border rounded-lg ${inputClasses}`}
             />
@@ -109,18 +106,16 @@ export default function ContentForm() {
               className={`w-full px-4 py-2 border rounded-lg ${inputClasses}`}
             />
             {errors.message && (
-              <p className='text-red-500 text-sm mt-1'>{errors.message.message}</p>
+              <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>
             )}
           </div>
 
           <button
-            type='submit'
+            type="submit"
             disabled={isSubmitting}
             className={`w-full py-3 px-4 rounded-lg font-medium ${
               theme === 'dark'
                 ? 'bg-red-600 hover:bg-red-700 text-white'
-                : theme === 'red-global'
-                ? 'bg-red-800 hover:bg-red-900 text-white'
                 : 'bg-red-500 hover:bg-red-600 text-white'
             } transition-colors duration-200`}
           >

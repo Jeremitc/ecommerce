@@ -14,9 +14,7 @@ export default function DashboardPage() {
   // Apply theme-based styles, with theme-red only for red-global
   const pageClasses = theme === 'dark'
     ? 'dark bg-black text-neutral-100'
-    : theme === 'red-global'
-    ? 'theme-red bg-red-950 text-neutral-100'
-    : 'bg-neutral-50 text-neutral-900';
+    : 'bg-neutral-100 text-black';
 
   // Define los slides para el carrusel principal
   const mainCarouselSlides = [

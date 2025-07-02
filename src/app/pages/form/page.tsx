@@ -12,9 +12,7 @@ export default function FormPage() {
      //  Aplica estilos rojos solo para 'red-global'
     const pageClasses = theme === 'dark'
         ? 'dark bg-black text-neutral-100'
-        : theme === 'red-global' // <--- tema global de rojo
-        ? 'theme-red bg-red-950 text-neutral-100'
-        : 'bg-neutral-50 text-neutral-900'; // light y red-navbar usan este
+        : 'bg-neutral-100 text-black'; // light y red-navbar usan este
 
     return (
         <div className={`flex flex-col min-h-screen font-sans transition-colors duration-300 ${pageClasses}`}>
